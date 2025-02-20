@@ -1,8 +1,9 @@
+local lang = getgenv().lang or "EN"
 if game.PlaceId == 394506555 then -- glue piece
-    if getgenv().lang == "EN" then
+    if lang == "EN" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JavieroXD/Yze-hub/refs/heads/main/Glue-piece/eng.lua"))()
-    elseif getgenv().lang == "TH" then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/JavieroXD/Yze-hub/refs/heads/main/Glue-piece/thai.lua"))(
+    elseif lang == "TH" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JavieroXD/Yze-hub/refs/heads/main/Glue-piece/thai.lua"))()
     else
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Error", -- Required
